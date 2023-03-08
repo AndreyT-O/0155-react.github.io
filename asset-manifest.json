@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/0155-react.github.io/static/css/main.1b4d75cb.css",
+    "main.js": "/0155-react.github.io/static/js/main.200a3bee.js",
+    "static/js/787.5e21e8bd.chunk.js": "/0155-react.github.io/static/js/787.5e21e8bd.chunk.js",
+    "static/media/400.woff": "/0155-react.github.io/static/media/400.88667d5b14f94a82329a.woff",
+    "static/media/700.woff": "/0155-react.github.io/static/media/700.010771f5e70d72b467bb.woff",
+    "static/media/400.woff2": "/0155-react.github.io/static/media/400.b29d8a5877fb70753625.woff2",
+    "static/media/700.woff2": "/0155-react.github.io/static/media/700.0fad76779f1cdd0ba491.woff2",
+    "static/media/sprite.svg": "/0155-react.github.io/static/media/sprite.db861ff70b624881acd7384b8d937178.svg",
+    "index.html": "/0155-react.github.io/index.html",
+    "main.1b4d75cb.css.map": "/0155-react.github.io/static/css/main.1b4d75cb.css.map",
+    "main.200a3bee.js.map": "/0155-react.github.io/static/js/main.200a3bee.js.map",
+    "787.5e21e8bd.chunk.js.map": "/0155-react.github.io/static/js/787.5e21e8bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b4d75cb.css",
+    "static/js/main.200a3bee.js"
+  ]
+}
