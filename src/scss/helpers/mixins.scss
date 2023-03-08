@@ -1,0 +1,24 @@
+$basicFont: 14;
+
+@function rem($value) {
+    @return calc($value / $basicFont) + rem;
+}
+
+@mixin text-control($row: 5) {
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+@mixin min($width) {
+    @media screen and (min-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin max($width) {
+    @media screen and (max-width: #{$width}) {
+        @content;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.title {
+	font-weight: 700;
+	font-size: rem(16);
+}
+
+@include min(380px) {
+	.title {
+		font-size: rem(18);
+	}
+}
+
+@include min(576px) {
+	.title {
+		font-size: rem(20);
+	}
+}

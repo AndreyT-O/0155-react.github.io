@@ -1,0 +1,158 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.services {
+	span {
+		display: flex;
+		align-items: center;
+	}
+	&__title {
+		font-weight: 400;
+	}
+	&__name {
+		width: 75%;
+		padding-left: 5px;
+	}
+	&__title, &__result {
+		width: 25%;
+		span {
+			word-break: inherit;
+		}
+	}
+	&__title, &__result, &__amount {
+		span {
+			justify-content: center;
+		}
+	}
+	&__result {
+		span {
+			font-weight: 700;
+		}
+	}
+	&__name, &__result, &__title {
+		span {
+			font-size: rem(13);
+		}
+	}
+	&__row {
+		span {
+			height: 25px;
+		}
+	}
+	&__head {
+		position: relative;
+		.services__title {
+			padding-bottom: 25px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 15px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: $gray-light;
+		}
+
+	}
+	&__foot {
+		position: relative;
+		transform: translateY(-5px);
+		.services__total, .services__amount {
+			padding-top: 25px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 15px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: $gray-light;
+		}
+	}
+	&__body {
+		position: relative;
+		.services {
+			&__row {
+				position: relative;
+				.services {
+					&__name, &__result {
+						padding-bottom: 5px;
+					}
+				}
+				&:first-child {
+					.services__name:before {
+						background: $green;
+					}
+				}
+				.services__name:before {
+					background: $blue;
+				}
+			}
+			&__name {
+				--interest: 20%;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: var(--interest);
+					height: calc(100% - 5px);
+					z-index: -2;
+					border-radius: 0 3px 3px 0;
+				}
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1px;
+			height: calc(100% - 5px);
+			background: $gray-light;
+			z-index: -1;
+		}
+	}
+}
+
+@include min(420px) {
+	.services {
+		&__name, &__result, &__title {
+			span {
+				font-size: rem(15);
+			}
+		}
+	}
+}
+
+@include min(768px) {
+	.services {
+		&__row span {
+			height: 30px;
+		}
+		&__body {
+			.services {
+				&__row {
+					.services {
+						&__name, &__result {
+							padding-bottom: 10px;
+						}
+					}
+				}
+				&__name {
+					&:before {
+						height: calc(100% - 10px);
+					}
+				}
+			}
+			&:before {
+				height: calc(100% - 10px);
+			}
+		}
+		&__foot {
+			transform: translateY(-10px);
+		}
+	}
+}

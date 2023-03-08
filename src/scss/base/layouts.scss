@@ -1,0 +1,27 @@
+.container {
+    --container-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-anchor: none;
+    &--fluid {
+        max-width: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@include min(576px) {
+    .container {
+        --container-width: 570px;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+
+@include min(768px) {
+    .container {
+        --container-width: 720px;
+        max-width: 720px;
+    }
+}

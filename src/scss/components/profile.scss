@@ -1,0 +1,102 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.profile {
+	--size-img: 125px;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	&__box {
+		width: 100%;
+	}
+	&__picture {
+		position: relative;
+		flex-shrink: 0;
+		width: var(--size-img);
+		height: var(--size-img);
+		margin-right: 10px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	&__name {
+		margin-bottom: 5px;
+	}
+	&__position {
+		margin-bottom: 5px;
+		color: $gray;
+		font-size: rem(12);
+	}
+	&__short-message {
+		position: relative;
+		padding: 5px 10px 5px 0;
+		background: $yellow-light;
+		border: 1px solid $gray-light;
+		border-left: none;
+		border-radius: 0 5px 5px 0;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -1px;
+			left: -30%;
+			width: 100%;
+			height: calc(100% + 2px);
+			background: inherit;
+			border: inherit;
+			z-index: -1;
+		}
+	}
+	&__services {
+		width: 100%;
+	}
+	&__text {
+		display: block;
+		&:not(&:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+@include min(380px) {
+	.profile {
+		&__name {
+			margin-bottom: 8px;
+		}
+		&__position {
+			margin-bottom: 8px;
+		}
+		&__position {
+			font-size: rem(14);
+		}
+	}
+}
+
+@include min(576px) {
+	.profile {
+		--size-img: 130px;
+	}
+}
+
+@include min(768px) {
+	.profile {
+		margin-bottom: 30px;
+		&__short-message {
+			padding: 8px 10px 8px 0;
+			&:before {
+				left: -10%;
+			}
+		}
+	}
+}

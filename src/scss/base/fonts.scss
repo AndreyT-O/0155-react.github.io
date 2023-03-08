@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+    url('../../fonts/pt-sans/400.woff2') format('woff2'),
+    url('../../fonts/pt-sans/400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+    url('../../fonts/pt-sans/700.woff2') format('woff2'),
+    url('../../fonts/pt-sans/700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+    url('../../fonts/arial/400.woff2') format('woff2'),
+    url('../../fonts/arial/400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+    url('../../fonts/arial/700.woff2') format('woff2'),
+    url('../../fonts/arial/700.woff') format('woff');
+}

@@ -1,0 +1,52 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.chat-form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 35px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -15px;
+		width: calc(100% + 30px);
+		height: 100%;
+		z-index: -1;
+		background: #F2F2F2;
+	}
+	&__textarea {
+		height: 65px;
+		width: 100%;
+		margin-bottom: 25px;
+		padding: 5px 10px;
+		line-height: 1.2;
+		resize: none;
+		border: 1px solid #000;
+		border-radius: 3px;
+		transition-property: border-color;
+		transition-duration: .3s;
+		&.error {
+			border-color: red;
+		}
+	}
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 43px;
+		max-width: 280px;
+		width: 100%;
+		border-radius: 23px;
+		background: $yellow;
+	}
+}
+
+@include min(576px) {
+	.chat-form {
+
+	}
+}

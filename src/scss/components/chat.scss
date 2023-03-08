@@ -1,0 +1,52 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.chat {
+	--size-icon: 16px;
+	&__text {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	&__link {
+		text-decoration: underline;
+		color: $blue-dark;
+	}
+	&__head {
+		margin-bottom: 15px;
+	}
+	&__chat-block {
+		margin-bottom: 20px;
+	}
+	&__box, &__inner, &__head {
+		display: flex;
+		align-items: center;
+	}
+	&__box {
+		margin-left: auto;
+	}
+	&__inner:first-child {
+		margin-right: 20px;
+	}
+	&__icon {
+		width: var(--size-icon);
+		height: var(--size-icon);
+		margin-right: 5px;
+	}
+}
+
+@include min(576px) {
+	.chat {
+		--size-icon: 20px;
+		&__head {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@include min(768px) {
+	.chat {
+		&__head {
+			margin-bottom: 25px;
+		}
+	}
+}

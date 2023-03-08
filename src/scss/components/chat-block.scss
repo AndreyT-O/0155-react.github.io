@@ -1,0 +1,74 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.chat-block {
+	display: flex;
+	flex-direction: column;
+	min-height: 300px;
+	max-height: 400px;
+	overflow: scroll;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	&__name {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	&__date {
+		font-size: rem(11);
+		color: $gray;
+	}
+	&__text {
+		--size-triangle: 10px;
+		position: relative;
+		display: block;
+		padding: 10px 20px;
+		background: #F2FBFF;
+		border: 1px solid #C4CBCF;
+		line-height: 1.4;
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: -10px;
+			left: 25px;
+		}
+		&:before {
+			border-bottom: var(--size-triangle) solid #C4CBCF;
+			border-right: var(--size-triangle) solid transparent;
+		}
+		&:after {
+			top: -8px;
+			left: 26px;
+
+			border-bottom: calc(var(--size-triangle) - 2px) solid #F2FBFF;
+			border-right: calc(var(--size-triangle) - 2px) solid transparent;
+		}
+	}
+}
+
+@include min(380px) {
+	.chat-block {
+		&__date {
+			font-size: rem(13);
+		}
+	}
+}
+
+@include min(768px) {
+	.chat-block {
+		&__inner:not(&__inner:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+}
