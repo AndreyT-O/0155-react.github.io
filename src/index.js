@@ -8,7 +8,7 @@ import Chat from "./components/Chat";
 import reportWebVitals from './reportWebVitals';
 
 const info = {
-    profile: '/img/profile.jpeg',
+    profile: './img/profile.jpeg',
     name: 'Eva Jonson',
     position: 'Sales Manager',
     shortInfo: [
