@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/0155-react.github.io/static/css/main.1b4d75cb.css",
-    "main.js": "/0155-react.github.io/static/js/main.e169e27b.js",
+    "main.css": "/0155-react.github.io/static/css/main.8387df6c.css",
+    "main.js": "/0155-react.github.io/static/js/main.b146e958.js",
     "static/js/787.5e21e8bd.chunk.js": "/0155-react.github.io/static/js/787.5e21e8bd.chunk.js",
     "static/media/400.woff": "/0155-react.github.io/static/media/400.88667d5b14f94a82329a.woff",
     "static/media/700.woff": "/0155-react.github.io/static/media/700.010771f5e70d72b467bb.woff",
     "static/media/400.woff2": "/0155-react.github.io/static/media/400.b29d8a5877fb70753625.woff2",
     "static/media/700.woff2": "/0155-react.github.io/static/media/700.0fad76779f1cdd0ba491.woff2",
-    "static/media/sprite.svg": "/0155-react.github.io/static/media/sprite.db861ff70b624881acd7384b8d937178.svg",
+    "static/media/sprite.svg": "/0155-react.github.io/static/media/sprite.404c23803e9f87add03596b99979277e.svg",
     "index.html": "/0155-react.github.io/index.html",
-    "main.1b4d75cb.css.map": "/0155-react.github.io/static/css/main.1b4d75cb.css.map",
-    "main.e169e27b.js.map": "/0155-react.github.io/static/js/main.e169e27b.js.map",
+    "main.8387df6c.css.map": "/0155-react.github.io/static/css/main.8387df6c.css.map",
+    "main.b146e958.js.map": "/0155-react.github.io/static/js/main.b146e958.js.map",
     "787.5e21e8bd.chunk.js.map": "/0155-react.github.io/static/js/787.5e21e8bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b4d75cb.css",
-    "static/js/main.e169e27b.js"
+    "static/css/main.8387df6c.css",
+    "static/js/main.b146e958.js"
   ]
 }
